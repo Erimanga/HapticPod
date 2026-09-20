@@ -1,0 +1,6 @@
+from building import *
+import os
+cwd = GetCurrentDir()
+src = Glob('*.c') + Glob('modules/*.c') + Glob('bluetooth/*.c') + Glob('network/*.c')
+group = DefineGroup('PeripheralLab', src, depend=['PKG_USING_LITTLEVGL2RTT'], CPPPATH=[cwd], LINKFLAGS=["-Wl,--wrap=rt_i2c_transfer", "-Wl,--wrap=hid_send_report_req_ext"])
+Return('group')

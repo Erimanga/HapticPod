@@ -1,0 +1,9 @@
+config CUSTOM_MEM_MAP
+    bool
+    select custom_mem_map
+    default y if !SOC_SIMULATOR
+
+config BT_USING_PAIRING_CONFIRMATION
+    bool "Confirm classic Bluetooth pairing"
+    default y
+    depends on CFG_PAN

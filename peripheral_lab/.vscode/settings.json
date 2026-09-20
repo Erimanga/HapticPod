@@ -1,0 +1,16 @@
+{
+    "sifli-sdk-codekit.workflows": [
+        {
+            "id": "wswf_20260919_134659",
+            "name": "wswf_clean",
+            "failurePolicy": "stop",
+            "steps": [
+                {
+                    "type": "build.clean",
+                    "wait": true,
+                    "continueOnError": false
+                }
+            ]
+        }
+    ]
+}
