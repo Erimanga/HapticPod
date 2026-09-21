@@ -308,7 +308,7 @@ void lab_ui_create(void)
     dashboard = box(lv_screen_active(), LV_PCT(100), LV_PCT(100), BG, 0);
     lv_obj_t *eyebrow = label(dashboard, "HUANGSHAN  /  HARDWARE", &lv_font_montserrat_12, GREEN);
     lv_obj_set_pos(eyebrow, 24, 20);
-    lv_obj_t *title = label(dashboard, "Peripheral Lab", &lv_font_montserrat_28, TEXT);
+    lv_obj_t *title = label(dashboard, "HapticPod Lab", &lv_font_montserrat_28, TEXT);
     lv_obj_set_pos(title, 22, 43);
     summary = label(dashboard, "Ready to verify", &lv_font_montserrat_14, MUTED);
     lv_obj_set_pos(summary, 24, 84);
