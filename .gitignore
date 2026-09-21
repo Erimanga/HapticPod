@@ -1,0 +1,9 @@
+# Local editor logs
+/nvim.log
+
+# SCons and Python local state
+**/.sconsign.dblite
+**/__pycache__/
+
+# SiFli project build output
+/peripheral_lab/project/build_*/
